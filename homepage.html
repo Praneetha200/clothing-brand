@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Clothing Brand</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-color: #f5f5f5;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 15px;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        .category {
+            margin: 50px 0;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        .products {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+        .product {
+            background-color: #ddd;
+            padding: 15px;
+            border-radius: 5px;
+            width: 150px;
+            text-align: center;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .product:hover {
+            background-color: #bbb;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Fashion Hub</h1>
+        <nav>
+            <ul>
+                <li><a href="#men">Men</a></li>
+                <li><a href="#women">Women</a></li>
+                <li><a href="#kids">Kids</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="men" class="category">
+    <h2>Men's Collection</h2>
+    <div class="products">
+        <a href="mens-shirt.html" class="product">Men's Shirt</a>
+        <a href="mens-jeans.html" class="product">Men's Jeans</a>
+        <a href="mens-jacket.html" class="product">Men's Jacket</a>
+    </div>
+</section>
+
+<section id="women" class="category">
+    <h2>Women's Collection</h2>
+    <div class="products">
+        <a href="womens-dress.html" class="product">Women's Dress</a>
+        <a href="womens-skirt.html" class="product">Women's Skirt</a>
+        <a href="womens-jacket.html" class="product">Women's Jacket</a>
+    </div>
+</section>
+
+<section id="kids" class="category">
+    <h2>Kids' Collection</h2>
+    <div class="products">
+        <a href="kids-tshirt.html" class="product">Kids' T-shirt</a>
+        <a href="kids-shorts.html" class="product">Kids' Shorts</a>
+        <a href="kids-jacket.html" class="product">Kids' Jacket</a>
+    </div>
+</section>
+    <script src="script.js"></script>
+</body>
+</html>
